@@ -7,7 +7,7 @@ import Colors from "../constants/colors"
 const Header = props => {
     return (
         <View style={styles.header}>
-            <TitleText>
+            <TitleText style={styles.title}>
                 {props.title}
             </TitleText>
         </View>
@@ -23,6 +23,9 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center"
     },
+    title: {
+        color: "white"
+    }
 })
 
 export default Header
