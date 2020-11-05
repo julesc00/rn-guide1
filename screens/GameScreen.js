@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react"
-import { View, Text, StyleSheet, ScrollView, FlatList, Alert } from "react-native"
+import { View, Text, StyleSheet, Dimensions, FlatList, Alert } from "react-native"
 
 import NumberContainer from "../components/NumberContainer";
 import Card from "../components/Card";
@@ -108,13 +108,13 @@ const styles = StyleSheet.create({
     buttonContainer: {
         flexDirection: "row",
         justifyContent: "space-around",
-        marginTop: 20,
+        marginTop: Dimensions.get("window").height > 600 ? 20 : 10,
         width: 300,
         maxWidth: "80%"
     },
     listContainer: {
         flex: 1,
-        width: "60%"
+        width: Dimensions.get("window").width > 500 ? "60%" : "80%"
     },
     list: {
         flexGrow: 1,

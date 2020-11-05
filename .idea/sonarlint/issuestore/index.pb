@@ -30,3 +30,5 @@ G
 components/TitleText.js,7/8/78bc690ed638b29a4c6efe74bb418868a26e7cf0
 K
 constants/default-styles.js,1/a/1a591bbd95596ce60386e5f4839b970b3a9c7d9f
+H
+components/MainButton.js,0/3/03292bbd41456449ce3668d2e31179ff1bab437f

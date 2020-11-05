@@ -64,7 +64,7 @@ export default function App() {
         </View>
     );
 }
-// Section 4 video 25
+// Section 5 video 6
 const styles = StyleSheet.create({
     screen: {
         flex: 1
