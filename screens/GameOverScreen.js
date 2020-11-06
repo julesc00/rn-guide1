@@ -32,9 +32,7 @@ const GameOverScreen = props => {
                         number <Text style={styles.highlight}>{props.userNumber}</Text>.
                     </BodyText>
                 </View>
-                <MainButton onPress={props.onRestart}>
-                    NEW GAME
-                </MainButton>
+                <MainButton onPress={props.onRestart}>NEW GAME</MainButton>
             </View>
         </ScrollView>
     )
@@ -44,7 +42,8 @@ const styles = StyleSheet.create({
     screen: {
         flex: 1,
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        paddingVertical: 10
     },
     title: {
         color: Colors.primary,
@@ -55,8 +54,8 @@ const styles = StyleSheet.create({
         height: "100%"
     },
     imageContainer: {
-        width: Dimensions.get("window").width * 0.7,
-        height: Dimensions.get("window").width * 0.7,
+        width: Dimensions.get("window").width * 0.6,
+        height: Dimensions.get("window").width * 0.6,
         borderRadius: Dimensions.get("window").width * 0.7 / 2,
         borderWidth: 3,
         borderColor: "black",
